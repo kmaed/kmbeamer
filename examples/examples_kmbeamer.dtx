@@ -1,0 +1,78 @@
+% \iffalse 
+%<*internal>
+\input docstrip.tex
+\keepsilent
+\usedir{tex/latex/kmbeamer/examples}
+\let\MetaPrefix\relax
+\preamble
+Copyright (c) 2011 Kazuki Maeda <kmaeda@users.sourceforge.jp>
+
+Distributable under the MIT License:
+http://www.opensource.org/licenses/mit-license.php
+
+\endpreamble
+\askforoverwritefalse
+
+\let\MetaPrefix\DoubleperCent
+\generate{\file{example_Blackboard.tex}{\from{examples_kmbeamer.dtx}{Blackboard}}}
+\endbatchfile
+%</internal>
+
+\documentclass{beamer}
+
+%<Blackboard>\usetheme{Blackboard}
+\usefonttheme{luatexja}
+
+\usepackage{unicode-math}
+\setmathfont{XITSMath}
+\ltjsetparameter{jacharrange={-3}}
+
+\begin{document}
+\title{\texttt{kmbeamer} のテスト}
+%<Blackboard>\subtitle{Blackboard 編}
+\author{前田一貴\footnote{\texttt{kmaeda@users.sourceforge.jp}}}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}{目次}
+  \tableofcontents
+\end{frame}
+
+\section{テスト}
+
+\begin{frame}{テスト1}
+  これはテストです．
+
+  \pause
+
+  \begin{enumerate}
+  \item リスト1\pause
+  \item リスト2\pause
+  \item リスト3
+  \end{enumerate}
+
+  \begin{itemize}
+  \item リスト1\pause
+  \item リスト2\pause
+  \item リスト3
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{テスト2}
+  数式のテスト．
+
+  \begin{theorem}[Gauss 積分]\upshape
+    以下の等式が成り立つ:
+    \begin{equation}
+      \int_{-\infty}^\infty \mathrm{e}^{-x^2}\mathrm{d}x=\sqrt{\pi}
+    \end{equation}
+  \end{theorem}
+\end{frame}
+
+\section{もっとテスト}
+\begin{frame}
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+\end{frame}
+\end{document}
