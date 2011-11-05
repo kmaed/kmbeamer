@@ -6,7 +6,7 @@ kmbeamer（kmaedaさん用 beamer theme 集）
 
 これはkmaedaさんが普段使っている beamer 用テンプレートを汎用化しようという試みです．少しずつ進めていく予定です．
 
-使い方は，examples/examples_kmbeamer.dtx を処理するとできるサンプルを見て下さい．
+使い方は，examples/examples_kmbeamer.dtx を処理するとできるサンプルを見て下さい．なお，サンプルでは日本語の出力のために lualatex + luatexja を使っています．platex についてはテストしていません．
 
 注意点
 ------
