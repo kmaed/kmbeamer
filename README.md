@@ -9,7 +9,7 @@ kmbeamer（kmaedaさん用 beamer theme 集）
 インストール
 ------------
 
-[ZIP アーカイブ](https://github.com/kmaed/kmbeamer/archive/master.zip)を取得し，TEXMF ツリーの然るべき場所に展開します．例えば，W32TeX ならインストールしたディレクトリにある share\texmf-local の下に tex\latex というディレクトリを作成し，そこに展開します．UNIX 系 OS をお使いの方なら，~/texmf/tex/latex というディレクトリを作成し，そこに展開するとよいと思います．
+[ZIP アーカイブ](https://github.com/kmaed/kmbeamer/archive/master.zip)を取得し，TEXMF ツリーの然るべき場所に展開します．例えば，W32TeX ならインストールしたディレクトリ（C:\w32tex など）にある share\texmf-local の下に tex\latex というディレクトリを作成し，そこに展開します．UNIX 系 OS をお使いの方なら，~/texmf/tex/latex というディレクトリを作成し，そこに展開するとよいと思います．
 
 使い方
 ------
