@@ -6,7 +6,15 @@ kmbeamer（kmaedaさん用 beamer theme 集）
 
 これはkmaedaさんが普段使っている beamer 用テンプレートを汎用化しようという試みです．少しずつ進めていく予定です．
 
-使い方は，examples/examples_kmbeamer.dtx を処理するとできるサンプルを見て下さい．なお，サンプルでは日本語の出力のために lualatex + luatexja を使っています．platex についてはテストしていません．
+インストール
+------------
+
+[ZIP アーカイブ](https://github.com/kmaed/kmbeamer/archive/master.zip)を取得し，TEXMF ツリーの然るべき場所に展開します．例えば，W32TeX ならインストールしたディレクトリにある share\texmf-local の下に tex\latex というディレクトリを作成し，そこに展開します．UNIX 系 OS をお使いの方なら，~/texmf/tex/latex というディレクトリを作成し，そこに展開するとよいと思います．
+
+使い方
+------
+
+examples/examples_kmbeamer.dtx を latex で処理するとできるサンプルを見て下さい．日本語を出力したい場合，サンプル中にもある通り platex + dvipdfmx か lualatex + luatexja を使うとよいでしょう．
 
 注意点
 ------
