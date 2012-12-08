@@ -5,7 +5,7 @@
 \usedir{tex/latex/kmbeamer/examples}
 \let\MetaPrefix\relax
 \preamble
-Copyright (c) 2011 Kazuki Maeda <kmaeda@users.sourceforge.jp>
+Copyright (c) 2011-2012 Kazuki Maeda <kmaeda@users.sourceforge.jp>
 
 Distributable under the MIT License:
 http://www.opensource.org/licenses/mit-license.php
@@ -20,17 +20,29 @@ http://www.opensource.org/licenses/mit-license.php
 
 \documentclass{beamer}
 
-\hypersetup{unicode}
+%%% もし dvipdfmx を使うなら，上の代わりに以下のようにする．
+%% \RequirePackage[dvipdfmx]{graphicx}
+%% \documentclass[hyperref={dvipdfmx}]{beamer}
+%% \makeatletter
+%% \Gm@setdriver{dvipdfm}
+%% \makeatother
 
 %<Blackboard>\usetheme{Blackboard}
-\usefonttheme{luatexja}
+
+%%% もし LuaTeX で日本語を出力するなら以下をコメントアウト．
+%% \usefonttheme{luatexja}
+%% \hypersetup{unicode}
+
+%%% もし pTeX + dvipdfmx を使うならば以下のどちらかを環境に合わせてコメントアウト．
+%% \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}} % EUC の場合
+%% \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}} % SJIS の場合
+
+%%% 日本語を使うなら以下を入れると定理環境中のフォントが立体になる．
+%%% 欧文なら不要．
 \setbeamertemplate{theorems}[normal font]
 
-\usepackage{unicode-math}
-\setmathfont{XITSMath}
-
-\title{\texttt{kmbeamer} のテスト}
-%<Blackboard>\subtitle{Blackboard 編}
+\title{\texttt{kmbeamer}のテスト}
+%<Blackboard>\subtitle{Blackboard編}
 \author{前田一貴\footnote{\texttt{kmaeda@users.sourceforge.jp}}}
 
 \begin{document}
@@ -68,10 +80,10 @@ http://www.opensource.org/licenses/mit-license.php
 \begin{frame}{テスト2}
   数式のテスト．
 
-  \begin{theorem}[Gauss 積分]\upshape
-    以下の等式が成り立つ:
+  \begin{theorem}[Gauss積分]
+    以下の等式が成り立つ：
     \begin{equation}
-      \int_{-\infty}^\infty \mathrm{e}^{-x^2}\mathrm{d}x=\sqrt{\pi}.
+      \int_{-\infty}^\infty \mathrm{e}^{-x^2}\,\mathrm{d}x=\sqrt{\pi}.
     \end{equation}
   \end{theorem}
 \end{frame}

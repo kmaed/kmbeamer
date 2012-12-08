@@ -1,22 +1,9 @@
 \documentclass{beamer}
-
 \usepackage{tikz}
-
-\usecolortheme{Blackboard} 
+\usecolortheme{Blackboard}
 \setbeamertemplate{background}[grid][step=1mm,color=bottlegreen!102]
- 
-\definecolor{kerria}{HTML}{FFA500}
-\definecolor{goldbrown}{HTML}{C47600}
-\definecolor{brown}{HTML}{763900}
-\definecolor{navy}{HTML}{1F2F54}
-\definecolor{satsuma}{HTML}{FA8000}
-\definecolor{sepia}{HTML}{4A3B2A}
-\definecolor{deepgreen}{HTML}{005731}
-
 \setbeamertemplate{navigation symbols}{}
-
 \begin{document}
-
 \begin{frame}[t,grid]
   \vspace{-6.75mm}\hspace{-11.3mm}
   \begin{tikzpicture}[x=1mm,y=1mm,overlay]
@@ -39,7 +26,7 @@
     \draw[draw=none,fill=kerria] (125, -3) -- (124, -4) -- (124, -93) -- (125, -93) -- cycle;
 
     % 黒板消し
-    \draw[draw=none,fill=navy] (106.5, -91) rectangle (117.5, -93);
+    \draw[draw=none,fill=navyblue] (106.5, -91) rectangle (117.5, -93);
     \draw[draw=none,fill=satsuma] (106, -89.5) rectangle (118, -91);
     \draw[draw=none,fill=sepia] (111, -91) rectangle (113, -88);
     \shade[ball color=deepgreen] (107, -90.25) circle (0.4);
