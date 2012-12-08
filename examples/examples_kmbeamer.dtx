@@ -18,24 +18,20 @@ http://www.opensource.org/licenses/mit-license.php
 \endbatchfile
 %</internal>
 
+%%% もし dvipdfmx を使うなら，以下をコメントアウトする．
+%% \PassOptionsToPackage{dvipdfmx}{graphicx}
+%% \PassOptionsToPackage{dvipdfmx}{hyperref}
 \documentclass{beamer}
 
-%%% もし dvipdfmx を使うなら，上の代わりに以下のようにする．
-%% \RequirePackage[dvipdfmx]{graphicx}
-%% \documentclass[hyperref={dvipdfmx}]{beamer}
-%% \makeatletter
-%% \Gm@setdriver{dvipdfm}
-%% \makeatother
-
 %<Blackboard>\usetheme{Blackboard}
-
-%%% もし LuaTeX で日本語を出力するなら以下をコメントアウト．
-%% \usefonttheme{luatexja}
-%% \hypersetup{unicode}
 
 %%% もし pTeX + dvipdfmx を使うならば以下のどちらかを環境に合わせてコメントアウト．
 %% \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}} % EUC の場合
 %% \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}} % SJIS の場合
+
+%%% もし LuaTeX で日本語を出力するなら以下をコメントアウト．
+%% \usefonttheme{luatexja}
+%% \hypersetup{unicode}
 
 %%% 日本語を使うなら以下を入れると定理環境中のフォントが立体になる．
 %%% 欧文なら不要．
