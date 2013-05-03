@@ -1,0 +1,51 @@
+%% Copyright (c) 2013 Kazuki Maeda <kmaeda@users.sourceforge.jp>
+%%
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%%
+\ProvidesPackage{beamerthemeDarkConsole}[2013/05/03 ]
+
+\mode<presentation>
+
+\RequirePackage{kmbeamer_common}
+
+\usecolortheme{DarkConsole}
+
+\def\familydefault{\ttdefault}
+
+\setbeamersize{text margin left=6mm,text margin right=6mm}
+
+\setbeamerfont{title}{size=\normalsize,series=\bfseries}
+\setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamerfont{footline}{size*={5}{\z@},series=\bfseries}
+
+\setbeamertemplate{itemize item}{$*$}
+\setbeamertemplate{itemize subitem}{$*$}
+\setbeamertemplate{itemize subsubitem}{$*$}
+\setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\texttt{>>> }}\boldmath\insertframetitle}
+\setbeamertemplate{headline}{\vspace{4mm}}
+\setbeamertemplate{footline}{
+  \setbox\kmbmr@tmpboxa\hbox{{\color{water}\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.~\insertsection~\fi\$~{\usebeamercolor[fg]{normal text}\_}}}
+  \setbox\kmbmr@tmpboxb\hbox{[\insertframenumber/\inserttotalframenumber]}
+  \ht\kmbmr@tmpboxa=1mm\dp\kmbmr@tmpboxa=0mm
+  \ht\kmbmr@tmpboxb=1mm\dp\kmbmr@tmpboxb=0mm
+  \vspace{5.2mm}
+  \hspace{4mm}\noindent\box\kmbmr@tmpboxa\hfill\box\kmbmr@tmpboxb\hspace{4mm}
+  \vspace{1.3mm}
+}
+\setbeamertemplate{title page}{
+  \renewcommand\thefootnote{\fnsymbol{footnote}}
+  \setcounter{footnote}{1} % \dagger
+  \noindent >>> {\usebeamerfont{title}\usebeamercolor[fg]{title}\bfseries\boldmath\inserttitle}
+  \ifx\insertsubtitle\@empty\else\\>>> {\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubtitle}\fi~\\[1em]
+  Name: \insertauthor\ \ifx\insertinstitute\@empty\else(\insertinstitute)\fi\\
+  Date: \insertdate
+  \renewcommand\thefootnote{\arabic{footnote}}
+  \setcounter{footnote}{0}
+}
+
+\mode
+<all>
+
+\endinput

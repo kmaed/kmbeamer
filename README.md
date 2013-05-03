@@ -25,9 +25,8 @@ examples/examples_kmbeamer.dtx を latex で処理するとできるサンプル
 収録テーマ
 ---------
 
-なるべく早く，昔使っていた Notebook も入れます．
-
  * Blackboard（黒板）
+ * DarkConsole（画面が黒い人用）
 
 意見・要望など
 -------------

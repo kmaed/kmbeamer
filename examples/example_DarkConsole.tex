@@ -1,29 +1,20 @@
-% \iffalse
-%<*internal>
-\input docstrip.tex
-\keepsilent
-\usedir{tex/latex/kmbeamer/examples}
-\let\MetaPrefix\relax
-\preamble
-Copyright (c) 2011-2013 Kazuki Maeda <kmaeda@users.sourceforge.jp>
-
-Distributable under the MIT License:
-http://www.opensource.org/licenses/mit-license.php
-
-\endpreamble
-\askforoverwritefalse
-
-\let\MetaPrefix\DoubleperCent
-\generate{\file{example_Blackboard.tex}{\from{examples_kmbeamer.dtx}{Blackboard}}}
-\generate{\file{example_DarkConsole.tex}{\from{examples_kmbeamer.dtx}{DarkConsole}}}
-\endbatchfile
-%</internal>
+%%
+%% This is file `example_DarkConsole.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% examples_kmbeamer.dtx  (with options: `DarkConsole')
+%% Copyright (c) 2011-2013 Kazuki Maeda <kmaeda@users.sourceforge.jp>
+%%
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%%
 
 %%% もし pdfTeX や LuaTeX を使うなら dvipdfm オプションを外す．
 \documentclass[dvipdfm]{beamer}
 
-%<Blackboard>\usetheme{Blackboard}
-%<DarkConsole>\usetheme{DarkConsole}
+\usetheme{DarkConsole}
 
 %%% もし pTeX + dvipdfmx を使うならば以下のどちらかを環境に合わせてコメントアウト．
 %% \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}} % EUC の場合
@@ -38,8 +29,7 @@ http://www.opensource.org/licenses/mit-license.php
 \setbeamertemplate{theorems}[normal font]
 
 \title{\texttt{kmbeamer}のテスト}
-%<Blackboard>\subtitle{Blackboard編}
-%<DarkConsole>\subtitle{DarkConsole編}
+\subtitle{DarkConsole編}
 \author{前田一貴\footnote{\texttt{kmaeda@users.sourceforge.jp}}}
 
 \begin{document}
@@ -90,3 +80,6 @@ http://www.opensource.org/licenses/mit-license.php
 あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
 \end{frame}
 \end{document}
+\endinput
+%%
+%% End of file `example_DarkConsole.tex'.
