@@ -3,7 +3,7 @@
 %% Distributable under the MIT License:
 %% http://www.opensource.org/licenses/mit-license.php
 %%
-\ProvidesPackage{beamerthemeDarkConsole}[2013/05/03 ]
+\ProvidesPackage{beamerthemeDarkConsole}[2013/05/04 ]
 
 \mode<presentation>
 
@@ -20,18 +20,18 @@
 \setbeamerfont{block title}{size=\normalsize,series=\bfseries}
 \setbeamerfont{footline}{size*={5}{\z@},series=\bfseries}
 
-\setbeamertemplate{itemize item}{$*$}
-\setbeamertemplate{itemize subitem}{$*$}
-\setbeamertemplate{itemize subsubitem}{$*$}
+\setbeamertemplate{itemize item}{*}
+\setbeamertemplate{itemize subitem}{*}
+\setbeamertemplate{itemize subsubitem}{*}
 \setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\texttt{>>> }}\boldmath\insertframetitle}
 \setbeamertemplate{headline}{\vspace{4mm}}
 \setbeamertemplate{footline}{
-  \setbox\kmbmr@tmpboxa\hbox{{\color{water}\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.~\insertsection~\fi\$~{\usebeamercolor[fg]{normal text}\_}}}
+  \setbox\kmbmr@tmpboxa\hbox{[\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.\insertsection\else\char"7E\fi]\$~\_}
   \setbox\kmbmr@tmpboxb\hbox{[\insertframenumber/\inserttotalframenumber]}
   \ht\kmbmr@tmpboxa=1mm\dp\kmbmr@tmpboxa=0mm
   \ht\kmbmr@tmpboxb=1mm\dp\kmbmr@tmpboxb=0mm
   \vspace{5.2mm}
-  \hspace{4mm}\noindent\box\kmbmr@tmpboxa\hfill\box\kmbmr@tmpboxb\hspace{4mm}
+  \hspace{6mm}\noindent\box\kmbmr@tmpboxa\hfill\box\kmbmr@tmpboxb\hspace{6mm}
   \vspace{1.3mm}
 }
 \setbeamertemplate{title page}{
