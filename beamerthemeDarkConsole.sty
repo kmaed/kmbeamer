@@ -3,7 +3,7 @@
 %% Distributable under the MIT License:
 %% http://www.opensource.org/licenses/mit-license.php
 %%
-\ProvidesPackage{beamerthemeDarkConsole}[2013/05/04 ]
+\ProvidesPackage{beamerthemeDarkConsole}[2013/05/08 ]
 
 \mode<presentation>
 
@@ -26,7 +26,7 @@
 \setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\texttt{\mdseries >>> }}\boldmath\insertframetitle}
 \setbeamertemplate{headline}{\vspace{4mm}}
 \setbeamertemplate{footline}{
-  \setbox\kmbmr@tmpboxa\hbox{[\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.\insertsection\else\char"7E\fi]\$~\_}
+  \setbox\kmbmr@tmpboxa\hbox{[\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.~\insertsection\else\char"7E\fi]\$~\_}
   \setbox\kmbmr@tmpboxb\hbox{[\insertframenumber/\inserttotalframenumber]}
   \ht\kmbmr@tmpboxa=1mm\dp\kmbmr@tmpboxa=0mm
   \ht\kmbmr@tmpboxb=1mm\dp\kmbmr@tmpboxb=0mm
