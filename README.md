@@ -4,7 +4,7 @@ kmbeamer (Beamer theme collection for kmaeda)
 What's this?
 ------------
 
-This is a theme collection of [LaTeX Beamer class](https://bitbucket.org/rivanvx/beamer/wiki/Home).
+This is a theme collection for [LaTeX Beamer class](https://bitbucket.org/rivanvx/beamer/wiki/Home).
 The themes included in the collection are originally written for kmaeda's presentations, but now provided for anyone who wants them.
 
 Installation
@@ -15,7 +15,7 @@ Get [zip archive](https://github.com/kmaed/kmbeamer/archive/master.zip) and extr
 Usage
 -----
 
-Try
+Type in the terminal:
 ```
 $ cd examples
 $ latex examples_kmbeamer.dtx
@@ -26,10 +26,12 @@ Themes
 ---------
 
  * Blackboard
- * DarkConsole (Gentoo console)
+ * DarkConsole (Gentoo dark terminal)
 
 Contact
 -------
 
 If you have any inquiries, mail to (kmaeda at kmaeda.net).
-Issues or pull requests via Github are also welcome.
+Issues and pull requests via Github are also welcome.
+
+Kazuki Maeda (aka kmaeda)
