@@ -25,7 +25,7 @@
 \setbeamertemplate{itemize item}{*}
 \setbeamertemplate{itemize subitem}{*}
 \setbeamertemplate{itemize subsubitem}{*}
-\setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\texttt{\mdseries >>> }}\boldmath\insertframetitle}
+\setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\texttt{\mdseries >\hbox{}>\hbox{}> }}\boldmath\insertframetitle}
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{
   \setbox\kmbmr@tmpboxa\hbox{[\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.~\insertsection\else\char"7E\fi]\$~\_}
@@ -39,8 +39,8 @@
 \setbeamertemplate{title page}{
   \renewcommand\thefootnote{\fnsymbol{footnote}}
   \setcounter{footnote}{1} % \dagger
-  \noindent >>> {\usebeamerfont{title}\usebeamercolor[fg]{title}\bfseries\boldmath\inserttitle}
-  \ifx\insertsubtitle\@empty\else\\>>> {\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubtitle}\fi~\\[1em]
+  \noindent >\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\bfseries\boldmath\inserttitle}
+  \ifx\insertsubtitle\@empty\else\\>\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubtitle}\fi~\\[1em]
   Name: \insertauthor\ \ifx\insertinstitute\@empty\else(\insertinstitute)\fi\\
   Date: \insertdate
   \renewcommand\thefootnote{\arabic{footnote}}

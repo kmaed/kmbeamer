@@ -19,28 +19,18 @@ http://www.opensource.org/licenses/mit-license.php
 \endbatchfile
 %</internal>
 
-%%% もし pdfTeX や LuaTeX を使うなら dvipdfmx オプションを外す．
-\documentclass[dvipdfmx]{beamer}
+\documentclass{beamer}
+
+\usepackage{lipsum}             % for dummy text
+\usepackage{stix}               % use the STIX font
 
 %<Blackboard>\usetheme{Blackboard}
 %<DarkConsole>\usetheme{DarkConsole}
 
-%%% もし pTeX + dvipdfmx を使うならば以下のどちらかを環境に合わせてコメントアウト．
-%% \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}} % EUC の場合
-%% \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}} % SJIS の場合
-
-%%% もし LuaTeX で日本語を出力するなら以下をコメントアウト．
-%% \usefonttheme{luatexja}
-%% \hypersetup{unicode}
-
-%%% 日本語を使うなら以下を入れると定理環境中のフォントが立体になる．
-%%% 欧文なら不要．
-\setbeamertemplate{theorems}[normal font]
-
-\title{\texttt{kmbeamer}のテスト}
-%<Blackboard>\subtitle{Blackboard編}
-%<DarkConsole>\subtitle{DarkConsole編}
-\author{前田一貴\footnote{\texttt{kmaeda@kmaeda.net}}}
+\title{An Example of \texttt{kmbeamer}}
+%<Blackboard>\subtitle{Blackboard theme}
+%<DarkConsole>\subtitle{DarkConsole theme}
+\author{Kazuki Maeda\footnote{\texttt{kmaeda@kmaeda.net}}}
 
 \begin{document}
 
@@ -48,46 +38,48 @@ http://www.opensource.org/licenses/mit-license.php
   \maketitle
 \end{frame}
 
-\begin{frame}{目次}
+\begin{frame}{Outline}
   \tableofcontents
 \end{frame}
 
-\section{テスト}
+\section{Mathematical Story}
 
-\begin{frame}{テスト1}
-  これはテストです．
+\begin{frame}{Slide $1$}
+  This is a very mathematical sentence.
 
   \pause
 
+  The followings are mathematical lists.
+
   \begin{enumerate}
-  \item リスト1\pause
-  \item リスト2\pause
-  \item リスト3
+  \item Item $1$\pause
+  \item Item $1+1$\pause
+  \item Item $1+1+1$
   \end{enumerate}
 
   \pause
 
   \begin{itemize}
-  \item リスト1\pause
-  \item リスト2\pause
-  \item リスト3
+  \item Item $1+1+1+1$\pause
+  \item Item $1+1+1+1+1$\pause
+  \item Item $1+1+1+1+1+1$
   \end{itemize}
 \end{frame}
 
-\begin{frame}{テスト2}
-  数式のテスト．
+\begin{frame}{Slide $1+1$}
+  \alert{Getting start to write equations!!!}
 
-  \begin{theorem}[Gauss積分]
-    以下の等式が成り立つ：
+  \begin{theorem}[Gaussian integral]
+    The following integral is very well known:
     \begin{equation}
       \int_{-\infty}^\infty \mathrm{e}^{-x^2}\,\mathrm{d}x=\sqrt{\pi}.
     \end{equation}
+
   \end{theorem}
 \end{frame}
 
-\section{もっとテスト}
-\begin{frame}
-あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
-%<DarkConsole>あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+\section{More Mathematical Story}
+\begin{frame}{Slide $1+1+1$}
+  \lipsum[1]
 \end{frame}
 \end{document}

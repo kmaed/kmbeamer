@@ -4,28 +4,28 @@
 \setbeamertemplate{background}[grid][step=1mm,color=bottlegreen!102]
 \setbeamertemplate{navigation symbols}{}
 \begin{document}
-\begin{frame}[t,grid]
+\begin{frame}[t]
   \vspace{-6.75mm}\hspace{-11.3mm}
   \begin{tikzpicture}[x=1mm,y=1mm,overlay]
-    % 外枠
+    % outer frame
     \draw[draw=none,fill=kerria] (0, 0) rectangle (128, -1);
     \draw[draw=none,fill=kerria] (0, 0) rectangle (1, -96);
     \draw[draw=none,fill=brown] (0, -96) -- (1, -95) -- (128, -95) -- (128, -96) --cycle;
     \draw[draw=none,fill=brown] (128, 0) -- (127, -1) -- (127, -96) -- (128, -96) --cycle;
 
-    % 中枠
+    % frame plate
     \draw[draw=none,fill=goldbrown] (1, -1) rectangle (127, -3);
     \draw[draw=none,fill=goldbrown] (1, -1) rectangle (3, -95);
     \draw[draw=none,fill=goldbrown] (125, -1) rectangle (127, -95);
     \draw[draw=none,fill=goldbrown] (1, -93) rectangle (127, -95);
 
-    % 内枠
+    % inner frame
     \draw[draw=none,fill=brown] (3, -3) rectangle (125, -4);
     \draw[draw=none,fill=brown] (3, -3) rectangle (4, -93);
     \draw[draw=none,fill=kerria] (3, -93) -- (4, -92) --(125, -92) -- (125, -93) -- cycle;
     \draw[draw=none,fill=kerria] (125, -3) -- (124, -4) -- (124, -93) -- (125, -93) -- cycle;
 
-    % 黒板消し
+    % eraser
     \draw[draw=none,fill=navyblue] (106.5, -91) rectangle (117.5, -93);
     \draw[draw=none,fill=satsuma] (106, -89.5) rectangle (118, -91);
     \draw[draw=none,fill=sepia] (111, -91) rectangle (113, -88);
@@ -35,7 +35,7 @@
     \shade[ball color=deepgreen] (114.5, -90.25) circle (0.4);
     \shade[ball color=deepgreen] (117, -90.25) circle (0.4);
 
-    % チョーク
+    % chalks
     \shade[draw=none,bottom color=gray,top color=snow] (70, -91.5) rectangle (80, -93);
     \shade[draw=none,bottom color=gray,top color=midyellow] (82, -91.5) rectangle (92, -93);
     \shade[draw=none,bottom color=gray,top color=water] (94, -91.5) rectangle (104, -93);

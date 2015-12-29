@@ -5,7 +5,7 @@ What's this?
 ------------
 
 This is a theme collection for [LaTeX Beamer class](https://bitbucket.org/rivanvx/beamer/wiki/Home).
-The themes included in the collection are originally written for kmaeda's presentations, but now provided for anyone who wants them.
+The themes included in the collection are originally written for kmaeda's presentations, but now available for anyone who wants to use them.
 
 Installation
 ------------
