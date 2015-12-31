@@ -20,7 +20,7 @@ Type in the terminal:
 $ cd examples
 $ latex examples_kmbeamer.dtx
 ```
-Then you will get the examples for each themes.
+Then you will get the examples for each theme.
 
 Themes
 ---------
@@ -31,7 +31,7 @@ Themes
 Contact
 -------
 
-If you have any inquiries, mail to (kmaeda at kmaeda.net).
+If you have any inquiries, mail to <kmaeda at kmaeda.net>.
 Issues and pull requests via Github are also welcome.
 
 Kazuki Maeda (aka kmaeda)
