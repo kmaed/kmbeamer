@@ -31,7 +31,7 @@ Themes
 Contact
 -------
 
-If you have any inquiries, mail to <kmaeda at kmaeda.net>.
+If you have any inquiries, mail to "kmaeda at kmaeda.net".
 Issues and pull requests via Github are also welcome.
 
 Kazuki Maeda (aka kmaeda)
