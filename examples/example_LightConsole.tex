@@ -1,42 +1,25 @@
-% \iffalse
-%<*internal>
-\input docstrip.tex
-\keepsilent
-\usedir{tex/latex/kmbeamer/examples}
-\let\MetaPrefix\relax
-\nopostamble
-\preamble
-Copyright (c) 2011-2017 Kazuki Maeda <kmaeda@kmaeda.net>
-
-Distributable under the MIT License:
-http://www.opensource.org/licenses/mit-license.php
-
-\endpreamble
-\askforoverwritefalse
-
-\let\MetaPrefix\DoubleperCent
-\generate{\file{example_Blackboard.tex}{\from{examples_kmbeamer.dtx}{Blackboard}}}
-\generate{\file{example_DarkConsole.tex}{\from{examples_kmbeamer.dtx}{DarkConsole}}}
-\generate{\file{example_LightConsole.tex}{\from{examples_kmbeamer.dtx}{LightConsole}}}
-\generate{\file{example_Notebook.tex}{\from{examples_kmbeamer.dtx}{Notebook}}}
-\endbatchfile
-%</internal>
+%%
+%% This is file `example_LightConsole.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% examples_kmbeamer.dtx  (with options: `LightConsole')
+%% Copyright (c) 2011-2017 Kazuki Maeda <kmaeda@kmaeda.net>
+%% 
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%% 
 
 \documentclass{beamer}
 
 \usepackage{lipsum}             % for dummy text
 \usepackage{stix}               % use the STIX font (of course you can delete this line)
 
-%<Blackboard>\usetheme{Blackboard}
-%<DarkConsole>\usetheme{DarkConsole}
-%<LightConsole>\usetheme{LightConsole}
-%<Notebook>\usetheme{Notebook}
+\usetheme{LightConsole}
 
 \title{An Example of \texttt{kmbeamer}}
-%<Blackboard>\subtitle{Blackboard theme}
-%<DarkConsole>\subtitle{DarkConsole theme}
-%<LightConsole>\subtitle{LightConsole theme}
-%<Notebook>\subtitle{Notebook theme}
+\subtitle{LightConsole theme}
 \author{Kazuki Maeda\footnote{\texttt{kmaeda@kmaeda.net}}}
 
 \begin{document}
