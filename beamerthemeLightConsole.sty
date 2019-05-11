@@ -1,0 +1,53 @@
+%% Copyright (c) 2013-2016 Kazuki Maeda <kmaeda@kmaeda.net>
+%%
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%%
+\ProvidesPackage{beamerthemeLightConsole}
+
+\mode<presentation>
+
+\RequirePackage{kmbeamer_common}
+
+\usecolortheme{LightConsole}
+
+\def\familydefault{\ttdefault}
+
+\setbeamersize{text margin left=2mm,text margin right=2mm}
+
+\setbeamerfont{alerted text}{series=\bfseries}
+\setbeamerfont{structure}{series=\bfseries}
+\setbeamerfont{title}{size=\normalsize,series=\bfseries}
+\setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamerfont{footline}{size*={5}{\z@},series=\bfseries}
+
+\setbeamertemplate{itemize item}{*}
+\setbeamertemplate{itemize subitem}{*}
+\setbeamertemplate{itemize subsubitem}{*}
+\setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\texttt{\mdseries >\hbox{}>\hbox{}> }}\boldmath\insertframetitle}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{
+  \setbox\kmbmr@tmpboxa\hbox{[\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.~\insertsection\else\char"7E\fi]\$~\_}
+  \setbox\kmbmr@tmpboxb\hbox{[\insertframenumber/\inserttotalframenumber]}
+  \ht\kmbmr@tmpboxa=1mm\dp\kmbmr@tmpboxa=0mm
+  \ht\kmbmr@tmpboxb=1mm\dp\kmbmr@tmpboxb=0mm
+  \vspace{5.2mm}
+  \hspace{2mm}\noindent\box\kmbmr@tmpboxa\hfill\box\kmbmr@tmpboxb\hspace{2mm}
+  \vspace{1.3mm}
+}
+\setbeamertemplate{title page}{
+  \renewcommand\thefootnote{\fnsymbol{footnote}}
+  \setcounter{footnote}{1} % \dagger
+  \noindent >\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\bfseries\boldmath\inserttitle}
+  \ifx\insertsubtitle\@empty\else\\>\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubtitle}\fi~\\[1em]
+  Name: \insertauthor\ \ifx\insertinstitute\@empty\else(\insertinstitute)\fi\\
+  Date: \insertdate
+  \renewcommand\thefootnote{\arabic{footnote}}
+  \setcounter{footnote}{0}
+}
+
+\mode
+<all>
+
+\endinput
