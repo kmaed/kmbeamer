@@ -27,7 +27,7 @@ Themes
 
  * Blackboard
  * DarkConsole (Gentoo dark terminal)
- * LightConsole (VS Code Light+ theme)
+ * LightConsole (VS Code Light+ theme, contributed by [@mo-igor](https://github.com/mo-igor))
  * Notebook
 
 Contact
