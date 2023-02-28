@@ -1,0 +1,53 @@
+%% Copyright (c) 2013-2016 Kazuki Maeda <kmaeda@kmaeda.net>
+%%
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%%
+\ProvidesPackage{beamerthemeLightConsoleFiraRemix}
+
+\mode<presentation>
+
+\RequirePackage{kmbeamer_common}
+
+\usecolortheme{LightConsoleFiraRemix}
+
+\usepackage[sfdefault, lining, book]{FiraSans}
+\usepackage[lining]{FiraMono}
+\def\familydefault{\sfdefault}
+
+\setbeamersize{text margin left=2mm,text margin right=2mm}
+
+\setbeamerfont{alerted text}{family=\firamonomedium}
+\setbeamerfont{structure}{family=\firamonomedium}
+\setbeamerfont{title}{size=\normalsize, family=\firamonomedium}
+\setbeamerfont{frametitle}{size=\normalsize, family=\firamonomedium}
+\setbeamerfont{block title}{size=\normalsize, family=\firamonomedium}
+\setbeamerfont{footline}{size*={5}{\z@}, family=\firamonomedium}
+
+\setbeamertemplate{itemize item}{·}
+\setbeamertemplate{itemize subitem}{·}
+\setbeamertemplate{itemize subsubitem}{·}
+\setbeamertemplate{frametitle}{{\usebeamercolor[fg]{normal text}\firamonomedium{\mdseries >\hbox{}>\hbox{}> }}\boldmath\insertframetitle} \setbeamertemplate{headline}{} \setbeamertemplate{footline}{ \setbox\kmbmr@tmpboxa\hbox{[\ifnum\insertsectionnumber>0\boldmath\insertsectionnumber.~\insertsection\else\char"7E\fi]\$~\_} \setbox\kmbmr@tmpboxb\hbox{[\insertframenumber/\inserttotalframenumber]} \ht\kmbmr@tmpboxa=1mm\dp\kmbmr@tmpboxa=0mm
+  \ht\kmbmr@tmpboxb=1mm\dp\kmbmr@tmpboxb=0mm
+  \vspace{5.2mm}
+  \hspace{2mm}\noindent\box\kmbmr@tmpboxa\hfill\box\kmbmr@tmpboxb\hspace{2mm}
+  \vspace{1.3mm}
+}
+\setbeamertemplate{title page}{
+  \renewcommand\thefootnote{\fnsymbol{footnote}}
+  \setcounter{footnote}{1} % \dagger
+  \noindent >\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\bfseries\boldmath\inserttitle}
+  \ifx\insertsubtitle\@empty\else\\>\hbox{}>\hbox{}> {\usebeamerfont{title}\usebeamercolor[fg]{title}\insertsubtitle}\fi~\\[1em]
+  \insertauthor\ \ifx\insertinstitute\@empty\else(\insertinstitute)\fi\\
+  \insertdate
+  \\
+  \inserttitlegraphic
+  \renewcommand\thefootnote{\arabic{footnote}}
+  \setcounter{footnote}{0}
+}
+
+
+\mode
+<all>
+
+\endinput

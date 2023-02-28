@@ -29,6 +29,16 @@ Themes
  * DarkConsole (Gentoo dark terminal)
  * LightConsole (VS Code Light+ theme, contributed by [@mo-igor](https://github.com/mo-igor))
  * Notebook
+ * DarkConsoleFiraRemix
+ * LightConsoleFiraRemix
+
+The `FiraRemix` variants are like the original console themes but with
+the following differences:
+
+ * They allow to add a titlegraphic
+ * The body font is Fira Sans Book (lining numbers)
+ * The monospace font is Fira Mono Medium (lining numbers)
+ * In the dark console the footline is golden
 
 Contact
 -------
