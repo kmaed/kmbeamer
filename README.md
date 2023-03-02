@@ -27,10 +27,10 @@ Themes
 
  * Blackboard
  * DarkConsole (Gentoo dark terminal)
- * LightConsole (VS Code Light+ theme, contributed by [@mo-igor](https://github.com/mo-igor))
+ * LightConsole (VS Code Light+ theme, contributed by [Igor Morawski](https://github.com/igor-morawski))
  * Notebook
- * DarkConsoleFiraRemix
- * LightConsoleFiraRemix
+ * DarkConsoleFiraRemix (contributed by [Martín Pozo](https://github.com/Martin1887))
+ * LightConsoleFiraRemix (contributed by [Martín Pozo](https://github.com/Martin1887))
 
 The `FiraRemix` variants are like the original console themes but with
 the following differences:
